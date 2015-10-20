@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Hangman View Controller-->
@@ -15,11 +15,51 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XVN-lx-YzN">
+                                <rect key="frame" x="180" y="117" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Kc-qo-F42">
+                                <rect key="frame" x="374" y="67" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Guess"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ifh-3h-TPf">
+                                <rect key="frame" x="252" y="285" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOd-lK-uvY">
+                                <rect key="frame" x="279" y="346" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehL-2R-N7g">
+                                <rect key="frame" x="180" y="67" width="83" height="30"/>
+                                <animations/>
+                                <state key="normal" title="New Game"/>
+                            </button>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XVN-lx-YzN" firstAttribute="leading" secondItem="ehL-2R-N7g" secondAttribute="leading" id="TkN-MP-d0P"/>
+                            <constraint firstItem="tOd-lK-uvY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="326" id="ZPZ-CH-G43"/>
+                            <constraint firstItem="tOd-lK-uvY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bXG-1e-p0X"/>
+                            <constraint firstItem="XVN-lx-YzN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="97" id="gqI-0O-aHg"/>
+                            <constraint firstItem="Ifh-3h-TPf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n0t-45-R9c"/>
+                            <constraint firstItem="XVN-lx-YzN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nE7-hX-BPB"/>
+                            <constraint firstItem="Ifh-3h-TPf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="ogO-JS-hYM"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="348"/>
         </scene>
     </scenes>
 </document>
